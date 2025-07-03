@@ -1,58 +1,58 @@
-// console.log("SCRIPT START");
+console.log("SCRIPT START");
 
-// setTimeout(()=>{
-//     console.log("I AM GOING TO RESTAURANT")
-// },4000);
+setTimeout(()=>{
+    console.log("I AM GOING TO RESTAURANT")
+},4000);
 
-// setTimeout(()=>{
-//     console.log("I AM CHECKING THE MENU FOR ORDERING")
-// },3000);
+setTimeout(()=>{
+    console.log("I AM CHECKING THE MENU FOR ORDERING")
+},3000);
 
 
 
-//callback
-// function walkInRestaurant(cb){
-//     console.log("I am walking inside the restaurant");
-//     setTimeout(cb,3000);
-// }
+// callback
+function walkInRestaurant(cb){
+    console.log("I am walking inside the restaurant");
+    setTimeout(cb,3000);
+}
 
-// function menuCheck(cb){
-//     console.log("I am checking the menu");
-//     setTimeout(cb,4000);
-// }
+function menuCheck(cb){
+    console.log("I am checking the menu");
+    setTimeout(cb,4000);
+}
 
-// function foodOrder(cb){
-//     console.log("I am ordering the food");
-//     setTimeout(cb,6000);
-// }
+function foodOrder(cb){
+    console.log("I am ordering the food");
+    setTimeout(cb,6000);
+}
 
-// function havingLunch(cb){
-//     console.log("I am having the food ");
-//     setTimeout(cb,8000);
-// }
+function havingLunch(cb){
+    console.log("I am having the food ");
+    setTimeout(cb,8000);
+}
 
-// function paybill(cb){
-//     console.log("I am payi9ng the bill");
-//     setTimeout(cb,3000);
-// }
+function paybill(cb){
+    console.log("I am payi9ng the bill");
+    setTimeout(cb,3000);
+}
 
-// function walkAwayFromRes(){
-//     console.log("BYE BYE GOING HOME");
-// }
+function walkAwayFromRes(){
+    console.log("BYE BYE GOING HOME");
+}
 
-// walkInRestaurant(()=>{
-//     menuCheck(()=>{
-//         foodOrder(()=>{
-//             havingLunch(()=>{
-//                 paybill(()=>{
-//                     walkAwayFromRes();
-//                 })
-//             })
-//         })
-//     })
-// })
+walkInRestaurant(()=>{
+    menuCheck(()=>{
+        foodOrder(()=>{
+            havingLunch(()=>{
+                paybill(()=>{
+                    walkAwayFromRes();
+                })
+            })
+        })
+    })
+})
 
-// console.log("SCRIPT END");
+console.log("SCRIPT END");
 
 
 
