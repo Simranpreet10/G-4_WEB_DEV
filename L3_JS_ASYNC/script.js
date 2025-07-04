@@ -59,22 +59,22 @@ orderDetail(cart,orderSummary)
 
 
 // prototype of reduce
-let arr = [1,2,3,4,5];
-Array.prototype.reducerr = function(logic,initial){
-    let ans =initial;
-    for(var i=0;i<this.length;i++){
-        ans = logic(ans,this[i]);
-    }
-    return ans;
-}
+// let arr = [1,2,3,4,5];
+// Array.prototype.reducerr = function(logic,initial){
+//     let ans =initial;
+//     for(var i=0;i<this.length;i++){
+//         ans = logic(ans,this[i]);
+//     }
+//     return ans;
+// }
 
-function logic(ans,ele){
-    ans = ans+ele;
-    return ans;
-}
+// function logic(ans,ele){
+//     ans = ans+ele;
+//     return ans;
+// }
 
-let output = arr.reducerr(logic,2) ;
-console.log(output);
+// let output = arr.reducerr(logic,2) ;
+// console.log(output);
 
 
 
