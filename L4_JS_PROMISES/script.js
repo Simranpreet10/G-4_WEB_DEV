@@ -104,11 +104,23 @@
 
 
 // const ans = fetch("https://dummyjson.com/products").then((res)=>console.log(res));
-async function fetchdata(){
-    const ans = await fetch("https://dummyjson.com/products");
-    const json = await ans.json();
-    console.log(json);
+// script.js
+
+async function fetchData() {
+  try {
+    const response = await fetch("https://dummyjson.com/products");
+    const json = await response.json();
+
+    const list = document.getElementById('product-list');
+
+    json.products.forEach(product => {
+      const li = document.createElement('li');
+      li.textContent = `Name: ${product.title}, Description: ${product.description}, Price: $${product.price}`;
+      list.appendChild(li);
+    });
+  } catch (error) {
+    console.error('Error fetching data:', error);
+  }
 }
 
-
-fetchdata();
+fetchData();
